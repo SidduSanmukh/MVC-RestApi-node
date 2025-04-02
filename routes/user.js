@@ -26,7 +26,7 @@ router.post("/", async (req, res) => {
 
 router.patch("/:id", async (req, res) => {
   const id = await userModule.findByIdAndUpdate(req.params.id, {
-    name: "GurunathaAarudha",
+    name: "Your Choice",
   });
 
   return res.status(202).json({ status: "User Updated" });
