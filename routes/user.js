@@ -4,10 +4,6 @@ import userModule from "../models/user.js";
 
 const router = Router();
 
-// router.get("/", (req, res) => {
-//   return res.json("Siddarooda swamiji Maharaj ki jai.");
-// });
-
 router.get("/", async (req, res) => {
   const users = await userModule.find({});
   return res.json(users);
